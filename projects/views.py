@@ -153,7 +153,7 @@ def note_edit(request, project_id, pk):
 
             return redirect(f'/projects/{project_id}/')
 
-    return render(request, 'projects/note_edit.html', {
+    return render(request, 'projects/edit_note.html', {
         'project': project,
         'note': note
     })
